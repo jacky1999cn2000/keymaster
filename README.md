@@ -141,6 +141,7 @@ dynamodb.createTable(params, function(err, data) {
 Now you can use POSTMAN to test the following endpoint:
   * GET: http://<docker-machine ip>:1337/client/:id
   * POST: http://192.168.99.100:1337/client/
+  
   ```javascript
     {
       "client_id": "123456",
