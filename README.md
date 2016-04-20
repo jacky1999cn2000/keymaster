@@ -159,5 +159,5 @@ Now you can use POSTMAN to test the following endpoint:
  * [need to run dynamodb-local image with -sharedDb option](http://stackoverflow.com/questions/29558948/dynamo-local-from-node-aws-all-operations-fail-cannot-do-operations-on-a-non-e)
 
 ### REFERENCE
-http://ahmed-hany.com/aws-dynamodb-notification-service/
-http://josephmr.com/dynamodb-testing-locally-with-node/
+ * http://ahmed-hany.com/aws-dynamodb-notification-service/
+ * http://josephmr.com/dynamodb-testing-locally-with-node/
