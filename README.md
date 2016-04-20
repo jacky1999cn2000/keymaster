@@ -33,7 +33,7 @@ Dockerfile和docker.yaml的区别 - 在这个项目中,Dockerfile是用来build 
   1. 根据Dockerfile的定义build一个image;
   2. run这个image
 
-在run的时候会执行Dockerfile里的entrypoint,所以此时的sailsjs环境是-prod,和db连接所用的config也是从./config/env/production.js中取得的
+在run的时候会执行Dockerfile里的entrypoint, 所以此时的sailsjs环境是-prod, 从而和db连接所用的config也是从./config/env/production.js中取得的
 
 ```javascript
 docker build -t micro-keymaster .  
@@ -139,16 +139,18 @@ dynamodb.createTable(params, function(err, data) {
 ```
 
 Now you can use POSTMAN to test the following endpoint:
-GET: http://<docker-machine ip>:1337/client/:id
-POST: http://192.168.99.100:1337/client/
-{
-  "client_id": "123456",
-  "client_secret": "xyzxyz",
-  "redirect_uri": "https://demo.com",
-  "api_key": "jqwefjaod;ss=",
-  "created_by": "woie"
-}
-DELETE: http://<docker-machine ip>:1337/client/:id
+  * GET: http://<docker-machine ip>:1337/client/:id
+  * POST: http://192.168.99.100:1337/client/
+  ```javascript
+    {
+      "client_id": "123456",
+      "client_secret": "xyzxyz",
+      "redirect_uri": "https://demo.com",
+      "api_key": "jqwefjaod;ss=",
+      "created_by": "woie"
+    }
+  ```
+  * DELETE: http://<docker-machine ip>:1337/client/:id
 
 ### P.S.
 [AWS provided a local version of dynamodb for dev/testing](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLocal.html#Tools.DynamoDBLocal.DownloadingAndRunning)
