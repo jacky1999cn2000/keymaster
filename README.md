@@ -141,7 +141,7 @@ dynamodb.createTable(params, function(err, data) {
 Now you can use POSTMAN to test the following endpoint:
   * GET: http://<docker-machine ip>:1337/client/:id
   * POST: http://192.168.99.100:1337/client/
-  
+
   ```javascript
     {
       "client_id": "123456",
@@ -154,9 +154,9 @@ Now you can use POSTMAN to test the following endpoint:
   * DELETE: http://<docker-machine ip>:1337/client/:id
 
 ### P.S.
-[AWS provided a local version of dynamodb for dev/testing](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLocal.html#Tools.DynamoDBLocal.DownloadingAndRunning)
-[docker image for dynamodb-local](https://hub.docker.com/r/fitz/dynamodb-local/)
-[need to run dynamodb-local image with -sharedDb option](http://stackoverflow.com/questions/29558948/dynamo-local-from-node-aws-all-operations-fail-cannot-do-operations-on-a-non-e)
+ * [AWS provided a local version of dynamodb for dev/testing](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLocal.html#Tools.DynamoDBLocal.DownloadingAndRunning)
+ * [docker image for dynamodb-local](https://hub.docker.com/r/fitz/dynamodb-local/)
+ * [need to run dynamodb-local image with -sharedDb option](http://stackoverflow.com/questions/29558948/dynamo-local-from-node-aws-all-operations-fail-cannot-do-operations-on-a-non-e)
 
 ### REFERENCE
 http://ahmed-hany.com/aws-dynamodb-notification-service/
