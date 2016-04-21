@@ -15,8 +15,8 @@ module.exports = {
   aws:{
     region: 'us-west-2',
   	endpoint: 'dynamodb.us-west-2.amazonaws.com',
-  	accessKeyId: 'AKIAIPEP57MOSUKILUEA',
-  	secretAccessKey: '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'
+  	accessKeyId: 'xxx',
+  	secretAccessKey: 'xxx'
   }
 
 };
